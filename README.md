@@ -9,28 +9,28 @@ The python file 'app_solved.py' was created in Visual Studio Code version 1.72.1
 
 The analysis and data exploration were carried out using the "climate_starter_solved.ipynb" using the following functions:
 
-   a. SQLAlchemy <create_engine()> to connect to the SQLite database 'hawaii.sqlite'.
-   b. SQLAlchemy <automap_base()> to reflect the tables into classes, and then save references to the classes named "station" and "measurement."
+   - SQLAlchemy <create_engine()> to connect to the SQLite database 'hawaii.sqlite'.
+   - SQLAlchemy <automap_base()> to reflect the tables into classes, and then save references to the classes named "station" and "measurement."
 
 Python was linked to the database by creating a SQLAlchemy session and the following analyses were performed:
 
 1. Precipitation analysis
 
-  a. Find the most recent date in the dataset.
-  b. Using that date, get the previous 12 months of precipitation data by querying the previous 12 months of data.
-  c. Select only the "date" and "prcp" values. (Note: Precipitation is measured in millimetres.)
-  d. Load the query results into a Pandas DataFrame, and set the index to the "date" column.
-  e. Sort the DataFrame values by "date".
-  f. Plot the results by using the DataFrame <plot> method.
-  g. Print the summary statistics for the precipitation data using Pandas.
+  - Find the most recent date in the dataset.
+  - Using that date, get the previous 12 months of precipitation data by querying the previous 12 months of data.
+  - Select only the "date" and "prcp" values. (Note: Precipitation is measured in millimetres.)
+  - Load the query results into a Pandas DataFrame, and set the index to the "date" column.
+  - Sort the DataFrame values by "date".
+  - Plot the results by using the DataFrame <plot> method.
+  - Print the summary statistics for the precipitation data using Pandas.
 
 2. Station analysis
 
-  a. Design a query to calculate the total number of stations in the dataset.
-  b. Design a query to find the most-active stations using the function <func.count>. That is, the stations that have the most rows that corresponds to the station id that has the greatest number of observations.
-  c. Design a query that calculates the lowest, highest, and average temperatures that filters on the most-active station id found in the previous query. (Note: Temperature is measured in Celsius.)
-  d. Design a query to get the previous 12 months of temperature observation (TOBS) data by filtering by the station that has the greatest number of observations and query the previous 12 months of TOBS data for that station.
-  e. Plot the results as a histogram with "bins=12".
+  - Design a query to calculate the total number of stations in the dataset.
+  - Design a query to find the most-active stations using the function <func.count>. That is, the stations that have the most rows that corresponds to the station id that has the greatest number of observations.
+  - Design a query that calculates the lowest, highest, and average temperatures that filters on the most-active station id found in the previous query. (Note: Temperature is measured in Celsius.)
+  - Design a query to get the previous 12 months of temperature observation (TOBS) data by filtering by the station that has the greatest number of observations and query the previous 12 months of TOBS data for that station.
+  - Plot the results as a histogram with "bins=12".
 
 The session was closed after the query.
 
