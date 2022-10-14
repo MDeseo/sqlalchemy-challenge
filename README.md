@@ -27,7 +27,7 @@ Python was linked to the database by creating a SQLAlchemy session and the follo
 2. Station analysis
 
   a. Design a query to calculate the total number of stations in the dataset.
-  b. Design a query to find the most-active stations using the function <func.count>. That is, the stations that have the most rows that corresponds to the station id that has the greatest number of observations. 
+  b. Design a query to find the most-active stations using the function <func.count>. That is, the stations that have the most rows that corresponds to the station id that has the greatest number of observations.
   c. Design a query that calculates the lowest, highest, and average temperatures that filters on the most-active station id found in the previous query. (Note: Temperature is measured in Celsius.)
   d. Design a query to get the previous 12 months of temperature observation (TOBS) data by filtering by the station that has the greatest number of observations and query the previous 12 months of TOBS data for that station.
   e. Plot the results as a histogram with "bins=12".
